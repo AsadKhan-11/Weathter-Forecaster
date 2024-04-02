@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: beige;
+  background: linear-gradient(to right bottom, lightblue, white);
+}
+
+#header {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#sr-bar {
+  height: 40px;
+  border-radius: 50px;
+  width: 240px;
+  border: 1px solid rgb(138, 137, 137);
+  padding-left: 10px;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 10px;
+  color: rgb(241, 240, 240);
+}
+#sr-btn:hover {
+  cursor: pointer;
+  background-color: rgba(31, 31, 31, 0.133);
+}
+
+#sr-btn:active {
+  background-color: rgba(104, 102, 102, 0.856);
+}
+
+#sr-btn {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+.sr-img {
+  height: 32px;
+  width: 32px;
+}
+.sun {
+  height: 150px;
+  margin-bottom: 10px;
+}
+#weather-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  width: 350px;
+  margin: 40px auto;
+  padding-bottom: 30px;
+  background-image: linear-gradient(
+    135deg,
+    rgb(144, 203, 223),
+    rgb(153, 153, 145)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+#weather-txt {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#city {
+  margin-bottom: 30px;
+}
+
+#humidity {
+  width: 300px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#humidity img {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 10px;
+}
+#hum-txt,
+#wind-txt {
+  font-size: 20px;
+}
+
+.addons {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#lower-form {
+  display: none;
+}
+
+#error {
+  display: none;
+  color: rgb(214, 214, 214);
+  text-align: left;
+}
